@@ -1,4 +1,4 @@
-import { searchUser } from "./gitHubAPI.js";
+import { searchUser, searchRepos } from "./gitHubAPI.js";
 import { renderProfile, toggleLoading, clearProfileResults } from "./profilePreview.js";
 
 const searchInput = document.getElementById("input-search");
@@ -18,7 +18,8 @@ const handleSearch = async () => {
 
     try {
         const data = await searchUser(username);
-        renderProfile(data, profileResults);
+        const repos = await searchRepos(username);
+        renderProfile(data, repos, profileResults);
     } catch (error) {
         alert("Ocorreu um erro ao buscar o usuário");
         console.error(error);
