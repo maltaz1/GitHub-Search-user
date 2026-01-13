@@ -1,5 +1,8 @@
 # GitHub Search User 🔍
 
+<img width="968" height="922" alt="image" src="https://github.com/user-attachments/assets/3152c0b1-c366-427a-b8b8-823f5c41fde7" />
+
+
 Uma aplicação web simples que permite buscar usuários do GitHub usando a **GitHub API** e exibir algumas informações básicas sobre o perfil.  
 Esse projeto foi criado para estudo e prática de **HTML, CSS e JavaScript**, além de integrar requisições com APIs externas.
 
